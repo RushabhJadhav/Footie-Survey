@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    background-image: url(images/sandro-schuh-HgwY_YQ1m0w-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.heading-img {
+    height: 50px;
+    align-self: center;
+    margin: 10px 0 0 0;
+}
+.heading-text {
+    font-family: 'Shadows Into Light', cursive;
+    margin: 20px;
+    font-size: 40px;
+    align-self: center;
+}
+/* header */
+form {
+    background-color: rgba(235, 233, 228, 0.5);
+    box-shadow: 1px 1px 10px black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    border-radius: 1%;
+}
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px 0;
+}
+.form-item {
+    margin: 15px 0;
+}
+.form-item > p {
+    /* font-weight: bold; */
+    margin: 0;
+}
+.form-item > button {
+    margin: 10px 0;
+}
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0 0 40px 0;
+}
+.form-item > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+.form-item > button {
+    margin: 0 4px 0 0;
+}
+#radio-button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+}
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    margin: 5px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio-button input {
+    display: none;
+}
+.radio-button input:checked + .checkmark {
+    display: inline-block;
+}
+.checkmark {
+    display: block;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: rgba(5, 108, 245, 0.8);
+    display: none;
+    border-radius: 50%;
+}
+.radio-text {
+    position: absolute;
+    margin-left: 65px;
+}
+#leagues {
+    height: 40px;
+    width: 100%;
+}
+input[type="text"], input[type="number"], input[type="email"], textarea {
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 10px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 1em;
+}
+select {
+    padding: 0 8px;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 1em;
+}
+select > option:hover {
+    background-color: aqua;
+}
+/* option:focus {
+    background-color: aqua;
+} */
+/* p {
+    padding: 0 0 5px 0;
+} */
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+}
+button[type="submit"], button[type="reset"] {
+    padding: 5px 10px;
+}
+#credit {
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+#pop-up-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/sandro-schuh-HgwY_YQ1m0w-unsplash.jpg);
+}
+#pop-up-box {
+    background-color: rgba(235, 233, 228, 0.5);
+    box-shadow: 1px 1px 10px black;
+    width: 55%;
+    /* height: 55%; */
+    margin: auto;
+    border-radius: 1%;
+}
+#text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+}
+#pop-up-text {
+    /* border: 1px solid white; */
+    text-align: center;
+    height: 100%;
+    font-size: 2em;
+    padding: 0 20px 20px 20px;
+}
+#close {
+    /* border: 1px solid red; */
+    width: 1em;
+    padding: 5px 0 0 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    align-self: flex-end;
+}
+#close:hover {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+    form {
+        width: 80%;
+    }
+    #pop-up-box {
+        width: 80%;
+    }
+    #pop-up-text {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+    .form-container {
+        width: 90%;
+    }
+    .heading-img {
+        height: 3em;
+        margin: 8px 0 0 0;
+    }
+    .heading-text {
+        font-size: 3em;
+        margin: 0 0 0 10px;
+    }
+    #pop-up-box {
+        width: 90%;
+    }
+    #pop-up-text {
+        font-size: 1.25em;
+    }
+}

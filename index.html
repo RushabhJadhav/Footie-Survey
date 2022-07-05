@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/from.css">
+    <link rel="icon" type="image/x-icon" href="/images/football-png-24997.png">
+    <title>Footie Survey</title>
+</head>
+<body>
+    <div class="heading">
+        <img src="/images/football-png-24997.png" alt="" class="heading-img">
+        <h1 class="heading-text">Footie Survey</h1>
+    </div>
+    <form name="myForm" action="">
+        <div class="form-container">
+            <div class="form-item">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email id">
+            </div>
+            <div class="form-item">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="10" max="150" placeholder="Enter your age">
+            </div>
+            <div class="form-item">
+                <p>Are you a footbal fan?</p>
+                <div id="radio-button-container">
+                    <label class="radio-button" onclick="radioQuestion()">
+                        <input type="radio" name="yes-no">
+                        <span class="checkmark"></span>
+                        <p class="radio-text">Yes</p>
+                    </label>
+                    <label class="radio-button" onclick="radioQuestionTwo()">
+                        <input type="radio" name="yes-no">
+                        <span class="checkmark"></span>
+                        <p class="radio-text">No</p>
+                    </label>
+                </div>
+                <p id="radio-response"></p>
+            </div>
+            <div class="form-item">
+                <p class="option">Which is your favourite league?</p>
+                <select name="leagues" id="leagues">
+                    <option value="" selected>Select</option>
+                    <option value="Premier League">Premier League</option>
+                    <option value="La Liga">La Liga</option>
+                    <option value="Serie A">Serie A</option>
+                    <option value="Bundesliga">Bundesliga</option>
+                    <option value="Ligue 1">Ligue 1</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="club">Your favourite club?</label>
+                <input type="text" id="fav-club" placeholder="Enter your favourite club">
+                <p id="fav-club-text"></p>
+            </div>
+            <div>
+                <label for="year">When did you became a football fan?</label>
+                <input type="number" id="year" placeholder="Enter the year" min="1950" max="new">
+            </div>
+            <div class="form-item">
+                <label for="feedback">Feedback</label>
+                <textarea name="feedback" id="feedback" placeholder="Enter your feedback here"></textarea>
+            </div>
+            <div class="form-item">
+                <button type="submit" onclick="submitFunction(event); popUpFunction();">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </div>
+    </form>
+    <div id="pop-up-container">
+        <div id="pop-up-box">
+            <div id="text-container">
+                <span onclick="closeButton()" id="close">&times;</span>
+                <p id="pop-up-text"></p>
+            </div>
+        </div>
+    </div>
+    <p id="credit">&#169;Project by Rushabh Jadhav</p>
+    <script src="/form.js"></script>
+</body>
+</html>
