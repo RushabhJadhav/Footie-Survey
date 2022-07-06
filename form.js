@@ -51,7 +51,7 @@ function popUpFunction() {
     } else if (option == "La Liga") {
         favLeague = "You must be a supporting either Barcelona or Real Madrid"
     } else if (option == "Serie A") {
-        favLeague;
+        favLeague = "Must be difficult supporting clubs other than Juve, Inter and Milan";
     } else if (option == "Bundesliga") {
         favLeague = "So you like watching Bayern-Liga";
     } else if (option == "Ligue 1") {
