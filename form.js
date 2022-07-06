@@ -80,12 +80,16 @@ function popUpFunction() {
             club = "I see you don't like trophies";
             break;
         case "Newcastle United":
-            club = "You must be newcastle fan after the Saudi takeover lmao"
+            club = "You must be newcastle fan after the Saudi takeover lmao";
+            break;
         case "Barcelona":
             club = "And a fucking plastic";
             break;
         case "Real Madrid":
             club = "And a fucking plastic";
+            break;
+        case "Atletico Madrid":
+            club = "Ohh you like supporting a fucking bus";
             break;
         case "Bayern Munich":
             club = "Don't you get bored of your club winning the league every season?";
@@ -94,7 +98,10 @@ function popUpFunction() {
             club = "So you support a stepping stone club hehehe";
             break;
         case "Paris Saint Germain":
-            club = "Keep dreaming of winning the Champion League";
+            club = "Keep dreaming of winning the Champions League";
+            break;
+        case "Juventus":
+            club = "Keep dreaming of winning the Champions League";
     }
 
     document.getElementById("pop-up-text").innerHTML = 
