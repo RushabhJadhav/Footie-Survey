@@ -60,7 +60,7 @@ function popUpFunction() {
 
     const favClub = document.getElementById("fav-club").value;
     let club;
-    switch (favClub) {
+    switch (favClub.trim()) {
         case "Manchester United":
             club = "I see you like to watch History Channels on Weekends";
             break;
