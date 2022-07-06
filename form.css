@@ -48,8 +48,10 @@ form {
     margin: 15px 0;
 }
 .form-item > p {
-    /* font-weight: bold; */
     margin: 0;
+}
+.form-item > .option {
+    padding-bottom: 5px;
 }
 .form-item > button {
     margin: 10px 0;
@@ -58,10 +60,12 @@ label {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin: 0 0 40px 0;
+    user-select: none;
 }
 .form-item > p {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
+    user-select: none;
 }
 .form-item > button {
     margin: 0 4px 0 0;
