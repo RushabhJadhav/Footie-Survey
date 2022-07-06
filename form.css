@@ -29,7 +29,6 @@ body {
     font-size: 40px;
     align-self: center;
 }
-/* header */
 form {
     background-color: rgba(235, 233, 228, 0.5);
     box-shadow: 1px 1px 10px black;
@@ -125,12 +124,6 @@ select {
 select > option:hover {
     background-color: aqua;
 }
-/* option:focus {
-    background-color: aqua;
-} */
-/* p {
-    padding: 0 0 5px 0;
-} */
 textarea {
     box-sizing: border-box;
     width: 100%;
@@ -167,17 +160,15 @@ button[type="submit"], button[type="reset"] {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
 }
 #pop-up-text {
-    /* border: 1px solid white; */
     text-align: center;
     height: 100%;
     font-size: 2em;
     padding: 0 20px 20px 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 #close {
-    /* border: 1px solid red; */
     width: 1em;
     padding: 5px 0 0 0;
     font-size: 2em;
