@@ -55,7 +55,7 @@ function popUpFunction() {
     } else if (option == "Bundesliga") {
         favLeague = "So you like watching Bayern-Liga";
     } else if (option == "Ligue 1") {
-        favLeague = "Who the fuck watches farmers league lol unless you are Arab oil fan";
+        favLeague = "Who the fuck watches farmers league lol";
     }
 
     const favClub = document.getElementById("fav-club").value;
@@ -71,7 +71,7 @@ function popUpFunction() {
             club = "You guys swtiched from Russian oil to American Oil";
             break;
         case "liverpool":
-            club = "Ohh you are supporter of liVARpool hehehe";
+            club = "Ohh you are supporter of liVARpool hehe";
             break;
         case "manchester city":
             club = "Got a little verse for you Roses are red, Voilets are blue, without Sheikh Mansour, You'd be in League Two";
@@ -89,24 +89,32 @@ function popUpFunction() {
             club = "And a fucking plastic";
             break;
         case "atletico madrid":
-            club = "Ohh you like supporting a fucking bus";
+            club = "Bus parking is like Tiki-Taka for you guys hehe";
             break;
         case "bayern munich":
             club = "Don't you get bored of your club winning the league every season?";
             break;
         case "borussia dortmund":
-            club = "So you support a stepping stone club hehehe";
+            club = "So you support a stepping stone club hehe";
             break;
         case "paris saint germain":
             club = "Keep dreaming of winning the Champions League";
             break;
         case "juventus":
             club = "Keep dreaming of winning the Champions League";
+            break;
+        default:
+            club = "You seem a true football fan proud of you dude!"
     }
 
     document.getElementById("pop-up-text").innerHTML = 
     "Hello " + name + ", " + favLeague + ". " + ageText + ". "
     + club;
+}
+
+function favClubFunction() {
+    document.getElementById("fav-club-text").innerHTML = 
+    "Make sure to spell club name correctly*";
 }
 
 function closeButton() {
