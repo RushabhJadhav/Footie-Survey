@@ -60,47 +60,47 @@ function popUpFunction() {
 
     const favClub = document.getElementById("fav-club").value;
     let club;
-    switch (favClub.trim()) {
-        case "Manchester United":
+    switch (favClub.toLowerCase().trim()) {
+        case "manchester united":
             club = "I see you like to watch History Channels on Weekends";
             break;
-        case "Arsenal":
+        case "arsenal":
             club = "Must be hard supporting a banter club";
             break;
-        case "Chelsea":
+        case "chelsea":
             club = "You guys swtiched from Russian oil to American Oil";
             break;
-        case "Liverpool":
+        case "liverpool":
             club = "Ohh you are supporter of liVARpool hehehe";
             break;
-        case "Manchester City":
+        case "manchester City":
             club = "Got a little verse for you Roses are red, Voilets are blue, without Sheikh Mansour, You'd be in League Two";
             break;
-        case "Tottenham Hotspur":
+        case "tottenham Hotspur":
             club = "I see you don't like trophies";
             break;
-        case "Newcastle United":
+        case "newcastle United":
             club = "You must be newcastle fan after the Saudi takeover lmao";
             break;
-        case "Barcelona":
+        case "barcelona":
             club = "And a fucking plastic";
             break;
-        case "Real Madrid":
+        case "real madrid":
             club = "And a fucking plastic";
             break;
-        case "Atletico Madrid":
+        case "atletico madrid":
             club = "Ohh you like supporting a fucking bus";
             break;
-        case "Bayern Munich":
+        case "bayern munich":
             club = "Don't you get bored of your club winning the league every season?";
             break;
-        case "Borussia Dortmund":
+        case "borussia dortmund":
             club = "So you support a stepping stone club hehehe";
             break;
-        case "Paris Saint Germain":
+        case "paris saint germain":
             club = "Keep dreaming of winning the Champions League";
             break;
-        case "Juventus":
+        case "juventus":
             club = "Keep dreaming of winning the Champions League";
     }
 
