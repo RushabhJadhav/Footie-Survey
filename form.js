@@ -73,13 +73,13 @@ function popUpFunction() {
         case "liverpool":
             club = "Ohh you are supporter of liVARpool hehehe";
             break;
-        case "manchester City":
+        case "manchester city":
             club = "Got a little verse for you Roses are red, Voilets are blue, without Sheikh Mansour, You'd be in League Two";
             break;
-        case "tottenham Hotspur":
+        case "tottenham hotspur":
             club = "I see you don't like trophies";
             break;
-        case "newcastle United":
+        case "newcastle united":
             club = "You must be newcastle fan after the Saudi takeover lmao";
             break;
         case "barcelona":
